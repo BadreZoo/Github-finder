@@ -1,0 +1,234 @@
+.App{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    background-image: url("./circle-scatter-haikei\ \(1\).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  height: 100vh;
+ 
+}
+.github-finder h1{
+    font-family: 'Request Coffee', sans-serif;     
+    margin-bottom: 15px;
+    padding: 15px;
+    margin: 10px;
+	cursor: pointer;
+ 
+}
+.search-container{
+    color: white;
+}
+
+.user-name{
+    margin-bottom: 3rem;
+    
+}    
+.search-bar{
+   
+    margin-top: 15px;
+}                                    
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.github-result{
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+    text-align: center;
+    overflow: hidden;    
+	gap: 13%;  
+	justify-content: center;                                         
+}
+.socials-case{
+	display: flex;
+	flex-direction: column;
+	gap: 10%;
+	border-radius: 5%;
+    border: 4px solid rgb(247, 243, 243);
+	width: 240px;
+	height: 240px;
+}
+.anim-test {
+	animation: myAnim 1s ease 0s 1 normal forwards;
+   
+}
+
+.bio-on{
+	color: black;
+}
+.ui.card>.content, .ui.cards>.card>.content{
+	flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgba(34,36,38,.1);
+    background: 0 0;
+    margin: 0;
+    /* padding: 1em 1em; */
+    box-shadow: none;
+    font-size: 1em;
+    border-radius: 0;
+    padding: 10px;
+    line-height: 32px;
+    text-align: left;
+}
+.ui.card:last-child {
+    margin-bottom: 0;
+    border-radius: 9px;
+	cursor: pointer; 
+	height:448px;
+	width: 254px;
+	overflow: auto;
+	
+}
+.p-no-bio{
+	color: black;
+}
+
+.github-first-case-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 380px;
+    width: 260px;
+    border-radius: 5%;
+    border: 5px solid rgb(247, 243, 243);
+	
+  
+}
+
+.none-display{
+	display: none;
+}
+.github-infos-account-github{
+    text-align: left;
+    font-size: 19px;
+ 
+}
+.fllwer-fllwing{
+    display: flex;
+    justify-content: space-between;
+	
+    
+  
+}
+
+.ready-tofindit{
+    font-family: 'Request Coffee', sans-serif;  
+    font-size: 60px;
+    animation: ShakeAnime 1.9s ease 0s infinite normal both;
+    cursor: pointer;
+	-webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-image: url(https://media2.giphy.com/media/dAWZiSMbMvObDWP3aA/200w.gif?cid=82a1493byp37003a7qbmajj1l5tg7mcliwmw1twdt960cw2l&ct=g&rid=200w.gif);
+}
+
+.github-infos-bio{
+    text-align: left;
+    line-height: 30px;
+}
+
+/* CSS */
+
+
+
+.github-infos-avatar{
+    border-radius: 50%;
+display: block;
+margin: auto;
+height: 130px;
+    width: 130px;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+@keyframes MySocialsAnim  {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
+@keyframes ShakeAnime {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+@keyframes LoupeAnime {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
